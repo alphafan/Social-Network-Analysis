@@ -25,3 +25,6 @@ Multiple Graph
 
 ### Show Graph
 - [Plot graph](notes/6_show_graph.md)
+
+### Load Graph
+- [5 Methods to Load Graph](notes/7_load_graph.md)
