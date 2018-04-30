@@ -1,5 +1,7 @@
 ### What is a bipartie graph?
 
+<img src='../images/33.png' />
+
 Bipartie graph is a graph where nodes can be split into two sets L and R 
 and every edge connects an node in L with a node in R. No inner connections
 inside L and R.
@@ -53,6 +55,8 @@ In fact, for the same reason, __a bipartite graph cannot contain a
 cycle of an odd number of nodes__.
 
 ### From Bipartie Graph ==> Projected Graph
+
+<img src='../images/37.png' />
 
  This kind of network could be important for `viral marketing`. 
  
