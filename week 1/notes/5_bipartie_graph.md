@@ -29,8 +29,10 @@ bipartite.is_bipartite(B)
 
 Graph A is bipartite: the two sets of nodes are {A,B,C} and {E,G,F}. 
 All edge connect a node in one set to a node in the other set. 
+
 Graph B is not bipartite: note that nodes C, B, and F form a triangle, 
 so it is not possible to assign each of these nodes to a side without 
 having edges connecting nodes that were assigned to the same side. 
+
 In fact, for the same reason, a bipartite graph cannot contain a 
 cycle of an odd number of nodes.
