@@ -22,3 +22,6 @@ Multiple Graph
 ### Bipartie Graph and Projected Graph
 
 - [Bipartie/Projected Graph](notes/5_bipartie_and_projected_graph.md)
+
+### Show Graph
+- [Plot graph](notes/6_show_graph.md)
