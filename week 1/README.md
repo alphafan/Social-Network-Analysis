@@ -14,3 +14,7 @@ complex phenomena.
 - [Network Definition](notes/3_network_definition.md)
 - Graphs in NetworkX: Un-directed Graph, Directed Graph, Weighted Graph, Signed Graph, 
 Multiple Graph
+
+### Node and Edge Attributes
+
+- [Access Node and Edge Attributes](notes/4_node_and_edge_attributes.md)
