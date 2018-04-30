@@ -1,5 +1,5 @@
 ## Different types of network
-
+<img src='images/3.png'>
 - Network between human
     - Friendship network in 34 person karate club (Node is person, edge is 
     relationship between person. Node 1 is probably an instructor and others
