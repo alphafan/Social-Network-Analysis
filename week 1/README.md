@@ -18,3 +18,7 @@ Multiple Graph
 ### Node and Edge Attributes
 
 - [Access Node and Edge Attributes](notes/4_node_and_edge_attributes.md)
+
+### Bipartie Graph and Projected Graph
+
+- [Bipartie/Projected Graph](notes/5_bipartie_and_projected_graph.md)
