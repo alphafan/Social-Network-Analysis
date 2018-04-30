@@ -9,6 +9,8 @@ G.add_edge('A', 'B')
 G.add_edge('B', 'C')
 ```
 
+---
+
 ### Asymmetric Graph (Directed graph)
 i.e. Animal A eats B -> Animal B does not eat A
  
@@ -19,6 +21,8 @@ G = nx.DiGraph()
 G.add_edge('A', 'B')
 G.add_edge('B', 'C')
 ```
+
+---
 
 ### Weighted Network
 Not all relationships are legal. Some edges can carry 
@@ -32,6 +36,8 @@ G.add_edge('A', 'B', weight=6)
 G.add_edge('B', 'C', weight=3)
 ```
 
+---
+
 ### Signed Network
 A network where edges are assigned positive or negative.
 
@@ -42,6 +48,8 @@ G = nx.DiGraph()
 G.add_edge('A', 'B', sign='+')
 G.add_edge('B', 'C', sign='-')
 ```
+
+---
 
 ### Other Attributes of Edges
 
