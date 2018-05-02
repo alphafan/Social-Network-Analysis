@@ -7,6 +7,6 @@ compute measures of connectivity of a network of email communication among
 the employees of a mid-size manufacturing company.
 
 ## Outline
-### [Local Clustering Coefficient](notes/1_Clustering_Coefficient.md)
+### [Local Clustering Coefficient](notes/1_Local_Clustering_Coefficient.md)
 - Definition
 - How to compute local clustering coefficient
