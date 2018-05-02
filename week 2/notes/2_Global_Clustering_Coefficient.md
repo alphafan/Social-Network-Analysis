@@ -41,3 +41,4 @@ print(nx.transitivity(G))
 - Both of them measures the tendency for edges to form triangles
 - __Transitivity weights nodes with large degrees higher__
 
+<img src='../images/11.png'>
