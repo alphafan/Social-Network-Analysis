@@ -53,8 +53,66 @@ def plot_graph(graph, weight_name=None):
 
 def answer_one():
     # Your Code Here
-    graph = nx.read_edgelist('Employee_Movie_Choices.txt', create_using=nx.DiGraph(), delimiter='\t')
+    graph = nx.read_edgelist('Employee_Movie_Choices.txt', delimiter='\t')
     return graph  # Your Answer Here
 
 
-answer_one()
+# ==> Question 2
+# Using the graph from the previous question, add nodes attributes named 'type' where movies have the value
+# 'movie' and employees have the value 'employee' and return that graph.
+# This function should return a networkx graph with node attributes {'type': 'movie'} or {'type': 'employee'}
+
+def answer_two():
+    # Your Code Here
+    graph = answer_one()
+    for employee in employees:
+        graph.add_node(employee, type='employee')
+    for movie in movies:
+        graph.add_node(movie, type='movie')
+    return graph  # Your Answer Here
+
+
+# ==> Question 3
+# Find a weighted projection of the graph from answer_two which tells us
+# how many movies different pairs of employees have in common.
+# This function should return a weighted projected graph.
+
+def answer_three():
+    # Your Code Here
+    graph = answer_two()
+    graph = bipartite.weighted_projected_graph(graph, employees)
+    return graph  # Your Answer Here
+
+
+# ==> Question 4
+# Suppose you'd like to find out if people that have a high relationship score also like the same types of movies.
+# Find the Pearson correlation ( using DataFrame.corr() ) between employee relationship scores and
+# the number of movies they have in common. If two employees have no movies in common it should be
+# treated as a 0, not a missing value, and should be included in the correlation calculation.
+# This function should return a float.
+
+def answer_four():
+    # Your Code Here
+
+    # Obtain Relation Score DF
+    relation_score = nx.read_edgelist(path='Employee_Relationships.txt',
+                                      data=[('relationship', int)],
+                                      delimiter='\t')
+    relation_df = pd.DataFrame(relation_score.edges(data=True), columns=['n1', 'n2', 'relationship'])
+    relation_df['relationship'] = relation_df['relationship'].map(lambda x: x['relationship'])
+
+    # Obtain Movies Choices DF
+    movie_choice = nx.read_edgelist('Employee_Movie_Choices.txt', delimiter='\t')
+    movie_choice = bipartite.weighted_projected_graph(movie_choice, employees)
+    choice_df = pd.DataFrame(movie_choice.edges(data=True), columns=['n1', 'n2', 'common'])
+    choice_df['common'] = choice_df['common'].map(lambda x: x['weight'])
+
+    # Merge two data frame
+    df = pd.merge(left=relation_df, right=choice_df, how='outer', on=['n1', 'n2'])
+    df = df.fillna(0)
+
+    # Get correlation
+    return df.corr()['relationship']['common']  # Your Answer Here
+
+
+answer_four()
