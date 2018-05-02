@@ -1,4 +1,4 @@
-## Clustering Coefficient
+## ==> Local Clustering Coefficient
 
 - What is Triadic Closure ?
     - The tendency for people who share connections to become connected
@@ -7,7 +7,7 @@
     - Q：Basic Idea on 如何 measure 这种 tendency ?
     - A：那些在网络中快要形成三角形但是还没有形成的，就是我们需要的（三角形的两个边已经有了）
 
-## How to measure clustering coefficient?
+## ==> How to measure clustering coefficient?
 
 ### Local Clustering Coefficient
 
