@@ -1,4 +1,5 @@
-## [Note of Week 1](notes) | [Slides of week 1](slides)
+## [Note of week 1](notes) | [Slides of week 1](slides) | [Exercise of week 1](exercises)
+ | [Assignment of week 1](assignment)
 
 ### Networks: Definition and Why We Study Them
 
