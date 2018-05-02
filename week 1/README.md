@@ -1,7 +1,5 @@
 ## [Note of week 1](notes) | [Slides of week 1](slides) | [Exercise of week 1](exercises) | [Assignment of week 1](assignment)
-
 ## Outline
----
 ### Networks: Definition and Why We Study Them
 
 - [Types of network](notes/1_type_of_different_networks.md)
