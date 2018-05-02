@@ -1,4 +1,4 @@
-## [Note of week 1](notes) | [Slides of week 1](slides) | [Exercise of week 1](exercises) | [Assignment of week 1](assignment)
+## [Note of week 2](notes) | [Slides of week 2](slides) | [Exercise of week 2](exercises) | [Assignment of week 2](assignment)
 
 In Module Two you'll learn how to analyze the connectivity of a network 
 based on measures of distance, reachability, and redundancy of paths 
