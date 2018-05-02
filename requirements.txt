@@ -1,0 +1,4 @@
+networkx==1.11
+numpy
+pandas
+matplotlib

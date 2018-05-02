@@ -25,6 +25,7 @@ G1.add_edges_from([(0, 1),
                    (8, 9)])
 
 # ==> Method 2: Load from adjacent list file
+# Adjacent list is good for graph without edges/nodes attributes
 G2 = nx.read_adjlist('G_adjlist.txt', nodetype=int)
 
 # ==> Method 3: Read from adjacent matrix
@@ -41,6 +42,7 @@ G_mat = np.array([[0, 1, 1, 1, 0, 1, 0, 0, 0, 0],
 G3 = nx.Graph(G_mat)
 
 # ==> Method 4: Load from edge list file
+# good for attributes data, not good for isolate nodes
 G4 = nx.read_edgelist('G_edgelist.txt', data=[('Weight', int)])
 
 # ==> Method 5: Read from pandas data frame
