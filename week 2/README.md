@@ -10,3 +10,8 @@ the employees of a mid-size manufacturing company.
 ### [Local Clustering Coefficient](notes/1_Local_Clustering_Coefficient.md)
 - Definition
 - How to compute local clustering coefficient
+
+### [Global Clustering Coefficient](notes/2_Global_Clustering_Coefficient.md)
+- Average Local Clustering Coefficient
+- Transitivity
+- Comparision of Two Methods

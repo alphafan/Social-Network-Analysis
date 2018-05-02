@@ -33,3 +33,11 @@ G.add_edges_from([('A', 'K'), ('A', 'B'), ('A', 'C'), ('B', 'C'),
                   
 print(nx.transitivity(G))
 ```
+
+---
+
+## Comparison of Two Global Clustering Coefficients
+
+- Both of them measures the tendency for edges to form triangles
+- __Transitivity weights nodes with large degrees higher__
+
