@@ -15,3 +15,8 @@ the employees of a mid-size manufacturing company.
 - Average Local Clustering Coefficient
 - Transitivity
 - Comparision of Two Methods
+
+### [Network Node Distance](notes/3_Distance.md)
+- Definition of Distance
+- Distance Measurements (Average Distance, Diameter, Eccentricity, Radius, 
+Periphery, Center)

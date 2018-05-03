@@ -45,6 +45,10 @@ Maximum distance between any pairs of nodes.
 Maximum distance between a node n to all other nodes.
 ### ==> Radius
 Minimum distance between any pairs of nodes.
+### ==> Periphery
+Number of nodes whose eccentricity is equal to diameter.
+### ==> Center
+Number of nodes where eccentricity is equal to radius.
 
 ```python
 import networkx as nx
@@ -54,12 +58,28 @@ G.add_edges_from([('A', 'K'), ('A', 'B'), ('A', 'C'), ('B', 'C'),
                   ('B', 'K'), ('C', 'E'), ('C', 'F'), ('D', 'E'),
                   ('E', 'F'), ('E', 'H'), ('F', 'I'), ('I', 'J')])
 
-### ==> Average distance (Average Shortest Path Length)
+# ==> Average distance (Average Shortest Path Length)
 print(nx.average_shortest_path_length(G))
-### ==> Diameter
+# 2.3777777777777778
+
+# ==> Diameter
 print(nx.diameter(G))
-### ==> Eccentricity
+# 5
+
+# ==> Eccentricity
 print(nx.eccentricity(G))
-### ==> Radius
+# {'K': 5, 'I': 4, 'E': 3, 'D': 4, 'H': 4, 
+#  'B': 4, 'A': 4, 'F': 3, 'C': 3, 'J': 5}
+
+# ==> Radius
 print(nx.radius(G))
+# 3
+
+# ==> Periphery
+print(nx.periphery(G))
+# ['K', 'J']
+
+# ==> Center
+print(nx.center(G))
+# ['E', 'F', 'C']
 ```
