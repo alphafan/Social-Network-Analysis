@@ -24,3 +24,8 @@ Periphery, Center)
 ### [Connected Components](notes/4_Connected_Components.md)
 - Definition of connected components
 - Strongly connected and weakly connected
+
+### [Network Robustness](notes/5_Network_Robustness.md)
+- Robustness of network
+- Minimum node/edge cuts to maintain the connectivity of a graph
+- Minimum node/edge cuts to block two nodes connection
