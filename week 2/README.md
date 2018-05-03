@@ -29,3 +29,6 @@ Periphery, Center)
 - Robustness of network
 - Minimum node/edge cuts to maintain the connectivity of a graph
 - Minimum node/edge cuts to block two nodes connection
+
+### [Visualize Graph in NetworkX](exercises)
+- Step by step visualize a Graph

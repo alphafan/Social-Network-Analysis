@@ -1,4 +1,4 @@
 networkx==1.11
 numpy
 pandas
-matplotlib
+matplotlib==2.0.0
