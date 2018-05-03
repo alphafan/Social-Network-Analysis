@@ -11,3 +11,5 @@ print(nx.average_shortest_path_length(G))
 print(nx.diameter(G))
 ### ==> Eccentricity
 print(nx.eccentricity(G))
+### ==> Radius
+print(nx.radius(G))
