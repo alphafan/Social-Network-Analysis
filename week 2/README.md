@@ -20,3 +20,7 @@ the employees of a mid-size manufacturing company.
 - Definition of Distance
 - Distance Measurements (Average Distance, Diameter, Eccentricity, Radius, 
 Periphery, Center)
+
+### [Connected Components](notes/4_Connected_Components.md)
+- Definition of connected components
+- Strongly connected and weakly connected
