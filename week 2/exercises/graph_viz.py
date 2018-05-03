@@ -13,6 +13,8 @@ print(G.edges(data=True)[0])
 # Have a look at different layouts in networkx
 print('Layouts:', [layout for layout in nx.__dir__() if layout.endswith('_layout')])
 
+#######################################################################################
+
 # ==> 1. Default Spring Layout
 plt.figure(figsize=(10, 7))
 nx.draw_networkx(G)
@@ -36,6 +38,8 @@ nx.draw_networkx(G, pos=nx.shell_layout(G))
 # ==> 6. Fruchterman reingold layout
 plt.figure(figsize=(10, 7))
 nx.draw_networkx(G, pos=nx.fruchterman_reingold_layout(G))
+
+#######################################################################################
 
 # Draw the graph using custom node positions
 plt.figure(figsize=(10, 7))
