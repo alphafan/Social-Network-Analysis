@@ -26,8 +26,8 @@ Centrality Measures
 - Katz centrality Percolation centrality 
 
 ### ==> Degree centrality 
-Assumption: important nodes have many connections. 
+__Assumption:__ important nodes have many connections. 
 
 The most basic measure of centrality: number of neighbors. 
-
-Undirected networks: use degree Directed networks: use in-degree or out-degree 
+- Undirected networks: use degree 
+- Directed networks: use in-degree or out-degree 
