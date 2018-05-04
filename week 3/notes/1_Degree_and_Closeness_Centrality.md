@@ -31,3 +31,15 @@ __Assumption:__ important nodes have many connections.
 The most basic measure of centrality: number of neighbors. 
 - Undirected networks: use degree 
 - Directed networks: use in-degree or out-degree 
+
+```python
+import networkx as nx
+
+graph = nx.karate_club_graph()
+graph = nx.convert_node_labels_to_integers(graph, first_label=1)
+degCent = nx.degree_centrality(graph)
+print(degCent[34])
+# 0.5151515151515151
+print(degCent[33])
+# 0.3636363636363636
+```
