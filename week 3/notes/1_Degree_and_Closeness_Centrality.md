@@ -57,3 +57,7 @@ print(degCent)
 degCent = nx.out_degree_centrality(G)
 print(degCent)
 ```
+
+### ==> Closeness centrality 
+__Assumption:__ important nodes are close to other nodes.
+ 
