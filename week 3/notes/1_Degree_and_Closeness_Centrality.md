@@ -43,3 +43,17 @@ print(degCent[34])
 print(degCent[33])
 # 0.3636363636363636
 ```
+
+```python
+import networkx as nx
+
+G = nx.DiGraph()
+G.add_edges_from([('A', 'K'), ('A', 'B'), ('A', 'C'), ('B', 'C'),
+                  ('B', 'K'), ('C', 'E'), ('C', 'F'), ('D', 'E'),
+                  ('E', 'F'), ('E', 'H'), ('F', 'G'), ('I', 'J')])
+
+degCent = nx.in_degree_centrality(G)
+print(degCent)
+degCent = nx.out_degree_centrality(G)
+print(degCent)
+```
