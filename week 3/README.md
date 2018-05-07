@@ -15,3 +15,7 @@
 
 ### [Basic Page Rank](notes/3_Basic_Page_Rank.md)
 - How to compute PageRank
+
+### [Scaled Page Rank](notes/4_Scaled_Page_Rank.md)
+- PageRank at Scale
+- Scaled PageRank problem and how to resolve it with dumping parameter
