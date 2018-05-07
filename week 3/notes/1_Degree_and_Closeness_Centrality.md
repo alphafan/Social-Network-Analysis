@@ -60,4 +60,5 @@ print(degCent)
 
 ### ==> Closeness centrality 
 __Assumption:__ important nodes are close to other nodes.
+<img src='../images/12.png' />
  
