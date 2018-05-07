@@ -13,3 +13,5 @@
 - Betweenness centrality nodes between two groups
 - Important edges finding in betweenness centrality
 
+### [Page Rank](notes/3_Page_Rank.md)
+- How to compute PageRank
