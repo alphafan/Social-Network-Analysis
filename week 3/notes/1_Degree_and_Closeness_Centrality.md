@@ -23,7 +23,8 @@ Centrality Measures
 - Betweenness centrality 
 - Load centrality 
 - Page Rank 
-- Katz centrality Percolation centrality 
+- Katz centrality 
+- Percolation centrality 
 
 ### ==> Degree centrality 
 __Assumption:__ important nodes have many connections. 
@@ -61,4 +62,13 @@ print(degCent)
 ### ==> Closeness centrality 
 __Assumption:__ important nodes are close to other nodes.
 <img src='../images/12.png' />
+
+__==> Q:__ How to measure the closeness centrality when a node cannot reach 
+all the other nodes?
+
+- Approach 1: Consider only the nodes that L can reach.
+    - Problem: sometimes the centrality will be very high
+- Approach 2: Consider only the nodes that L can reach and `normalize by
+the fraction of nodes that L can reach.`
+    - 第二种方法并不会改变第一种方法的结果，如果是一个全连接的图的话，normalize 的部分为1.
  
