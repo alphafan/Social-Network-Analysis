@@ -19,3 +19,9 @@
 ### [Scaled Page Rank](notes/4_Scaled_Page_Rank.md)
 - PageRank at Scale
 - Scaled PageRank problem and how to resolve it with dumping parameter
+
+### [Authorities and Hubs](notes/5_Hubs_Authorities.md)
+- What is hub and authority?
+- How to compute them?
+- Compare with PageRank?
+
