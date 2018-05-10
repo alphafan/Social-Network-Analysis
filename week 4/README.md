@@ -9,3 +9,9 @@ concepts of the course by predicting the salary, position, and future connection
 of the employees of a company using their logs of email exchanges.
 
 ## [Note of week 4](notes) | [Slides of week 4](slides) | [Exercise of week 4](exercises) | [Assignment of week 4](assignment)
+
+## [Preferential Attachment Model](notes/1_Preferential_Attachment_Model.md)
+- What is degree distribution
+- How degree distribution looks like in real network?
+- How could we model the distribution(Preferential Attachment Model)
+- Rich-get-richer model
