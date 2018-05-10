@@ -15,3 +15,10 @@ of the employees of a company using their logs of email exchanges.
 - How degree distribution looks like in real network?
 - How could we model the distribution(Preferential Attachment Model)
 - Rich-get-richer model
+
+## [Small World Model](notes/2_Small_World_Networks.md)
+- Milgram Small World Experiment 
+- Real networks tends to have short avg distance and high LCC properties of real network
+- Small world model to generate this real world network
+- Some improvements to make a network always connected
+
