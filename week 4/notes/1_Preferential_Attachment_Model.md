@@ -29,6 +29,23 @@ Preferential Attachment Model. 可以想象，一个经常和其他演员合作�
 
 每个新节点可以根据定义加到 n 个已经存在的节点上，n 可以大于 1
 
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.barabasi_albert_graph(1000000,1)
+degrees = G.degree()
+degree_values = sorted(set(degrees.values()))
+histogram = [list(degrees.values()).count(i) / float(nx.number_of_nodes(G)) for i in degree_values]
+
+plt.plot(degree_values,histogram, 'o')
+plt.xlabel('Degree')
+plt.ylabel('Fraction of Nodes')
+plt.xscale('log')
+plt.yscale('log')
+plt.show()
+```
+
 ## Rich-get-richer Model
 
 与 Preferential Attachment Model 的区别是：
