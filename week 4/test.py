@@ -2,15 +2,16 @@ import networkx as nx
 
 G = nx.Graph()
 
-G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('C', 'D'),
-                  ('C', 'E'), ('D', 'E'), ('D', 'G'), ('E', 'G'), ('F', 'G')])
+G.add_edges_from([('A', 'C'), ('A', 'D'), ('A', 'E'), ('B', 'D'), ('G', 'C'),
+                  ('D', 'E'), ('D', 'G'), ('D', 'H'), ('E', 'H'), ('F', 'H')])
 
-for node in G.nodes():
-    G[node]['community'] = 1
-G['A']['community'] = 0
-
-
-g = nx.DiGraph()
-g.add_edges_from([('A', 'B'), ('B', 'C'), ('A', 'C'), ('C', 'A'), ('D', 'C')])
+G.node['A']['community'] = 0
+G.node['B']['community'] = 0
+G.node['C']['community'] = 0
+G.node['D']['community'] = 0
+G.node['E']['community'] = 1
+G.node['F']['community'] = 1
+G.node['G']['community'] = 0
+G.node['H']['community'] = 1
 
 print(list(nx.cn_soundarajan_hopcroft(G)))
